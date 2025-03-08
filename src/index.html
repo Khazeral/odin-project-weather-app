@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css">
+    <title>Weather App</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Weather App</h1>
+        </div>
+    </header>
+
+    <main>
+        <div id="weather-container">
+            <input type="text" id="location-input" placeholder="Entrez une ville" />
+            <button id="search-btn">Rechercher</button>
+
+            <div id="weather-info" class="hidden">
+                <h2 id="location-name"></h2>
+                <div id="weather-details">
+                    <img id="weather-icon" alt="weather icon" />
+                    <p id="temperature">Température: <span></span>°C</p>
+                    <p id="conditions"></p>
+                    <p id="precipitation">Précipitation: <span></span>%</p>
+                    <p id="wind-speed">Vent: <span></span> km/h</p>
+                </div>
+            </div>
+
+            <p id="error-message" class="hidden"></p>
+        </div>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
