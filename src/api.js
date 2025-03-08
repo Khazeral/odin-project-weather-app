@@ -21,7 +21,6 @@ export const fetchLocalisationWeather = async (localisation) => {
         if (!dayData) throw new Error("Données météo introuvables");
 
         return {
-            currentDay : {
                 location: localisationData.resolvedAddress, 
                 temperature: {
                     current: dayData.temp,
@@ -42,8 +41,6 @@ export const fetchLocalisationWeather = async (localisation) => {
                     },
                 },
                 description: dayData.description,
-            },
-            nextDaysData : localisationData.days?.[1-5]
 
         };
     } catch (error) {
